@@ -10,13 +10,22 @@ body {
 }
 
 .center-content {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+}
+
+.start-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30%;
 }
 
 .center-image {
-    max-width: 100%;
+    max-width: 50%;
     height: auto;
-    margin-bottom: 20px;
 }
 
 .btn {
@@ -27,7 +36,6 @@ body {
     color: white;
     cursor: pointer;
     border-radius: 5px;
-    margin-top: 20px;
 }
 
 .btn:hover {
@@ -36,6 +44,10 @@ body {
 
 .survey-page {
     display: none;
+}
+
+.survey-page.active {
+    display: block;
 }
 
 .options label {
