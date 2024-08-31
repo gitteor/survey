@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>간단한 설문조사</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="initialScreen">
+        <div class="center-content">
+            <img src="your-image.png" alt="Survey Image" class="center-image">
+            <button id="startSurvey" class="btn">설문 시작</button>
+        </div>
+    </div>
+
+    <div id="surveyScreen" style="display: none;">
+        <form id="surveyForm">
+            <div class="survey-page" id="page-1">
+                <h2>설문조사 (1/4)</h2>
+                <div class="question">
+                    <p>질문 1: 여기 첫 번째 질문이 들어갑니다.</p>
+                    <div class="options">
+                        <label><input type="radio" name="q1" value="1"> 매우 그렇다</label>
+                        <label><input type="radio" name="q1" value="2"> 그렇다</label>
+                        <label><input type="radio" name="q1" value="3"> 보통이다</label>
+                        <label><input type="radio" name="q1" value="4"> 아니다</label>
+                        <label><input type="radio" name="q1" value="5"> 전혀 아니다</label>
+                    </div>
+                </div>
+                <!-- 같은 구조로 4개의 추가 질문을 넣으세요 -->
+                <button type="button" class="btn next-btn" onclick="nextPage(2)">다음</button>
+            </div>
+
+            <!-- 같은 구조로 페이지 2, 3, 4를 추가하세요 -->
+            
+            <div class="survey-page" id="page-4" style="display: none;">
+                <h2>설문조사 (4/4)</h2>
+                <!-- 마지막 5개의 질문을 넣으세요 -->
+                <button type="submit" class="btn">완료</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
